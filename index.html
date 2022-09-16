@@ -53,12 +53,13 @@
       </header>
     <!-- Шапка -->
     <main>
-      <!-- Зміст -->
+      <!-- hat -->
     <section class="hat">
       <div class="container">
     <h1 class="hat-h1">Ефективні рішення<br> для вашого бізнесу</h1>
     <button type="button" class="hat-button-open" data-modal-open>Замовити послугу</button>
     <div class="backdrop is-hidden" data-modal>
+      <!-- Modal -->
     <div class="modal">
       <button type="button" class="hat-button-close" data-modal-close>
         <svg width="11px" height="11px">
@@ -66,27 +67,42 @@
         </svg>
       </button>
       <h2 class="modal-h2">Залиште свої дані, ми вам передзвонимо</h2>
+      <!-- form-div -->
+      <div class="form-div">
       <form class="modal-form" autocomplete="on">
-        <div class="modal-div">
         <label class="modal-label">Ім'я</label>
-        <input type="name" class="modal-form-name" placeholder=" ">
-        <span class="modal-icon"></span>
-      </div>
         <div class="modal-div">
-        <label class="modal-label">Телефон</label>
+        <input type="name" class="modal-form-name" placeholder=" ">
+        <span class="modal-icon">
+          <svg width="12" height="12">
+          <use href=".//images/icons.svg#name"></use>
+        </svg>
+      </span>
+      </div>
+      <label class="modal-label">Телефон</label>
+        <div class="modal-div">
           <input type="phone" class="modal-form-name" placeholder=" ">
-          <span class="modal-icon"></span>
+          <span class="modal-icon">
+            <svg width="13" height="13">
+            <use href=".//images/icons.svg#phone"></use>
+          </svg>
+        </span>
         </div>
+        <label class="modal-label">Пошта</label>
           <div class="modal-div">
-          <label class="modal-label">Пошта</label>
             <input type="mail" class="modal-form-name" placeholder=" ">
-            <span class="modal-icon"></span>
+            <span class="modal-icon">
+              <svg width="15" height="12">
+                <use href=".//images/icons.svg#mail"></use>
+              </svg>
+            </span>
           </div>
+          <label class="modal-label">Коментар</label>
             <div class="modal-div">
-            <label class="modal-label">Коментар</label>
               <input type="comment" class="modal-form-comment" placeholder="Введіть текст">
             </div>
       </form>
+      </div>
     </div>
   </div>
   </div>
