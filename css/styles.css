@@ -283,6 +283,9 @@ border: 1px solid var(--input-border);
 border-radius: 4px;
 padding: 0;
 padding-left: 42px;
+transition-property: fill, border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Input-comment */
 .modal-form-comment {
@@ -290,13 +293,15 @@ border: 1px solid var(--input-border);
 border-radius: 4px;
 padding: 12px 16px; 
 resize: none;
+transition-property: border;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Input focus */
 .modal-form-name:focus,
 .modal-form-comment:focus {
 border: 1px solid var(--blue);
 outline: none;
-fill: var(--blue);
 }
 /* modal-form-comment::placeholder */
 .modal-form-comment::placeholder {
@@ -337,6 +342,9 @@ display: block;
 border: 1px solid var(--hat-button-close-border);
 border-radius: 100%;
 background-color: var(--white);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hat-button-close:hover {
 fill: var(--blue);
@@ -363,10 +371,13 @@ fill: var(--blue);
 position: absolute;
 top: 50%;
 transform: translateY(-50%);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Agree check */
 .agree-svg:hover  {
-fill: #2196F3;
+fill: var(--blue);
 }
 /* Agree a */
 .agree-a {
@@ -394,6 +405,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border: none;
 border-radius: 4px;
 cursor: pointer;
+transition-property: background;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Modal Button hover */
 .modal-submit:hover,
@@ -686,6 +700,7 @@ margin-left: 93px;
 display: flex;
 flex-direction: column;
 }
+/* Email */
 .email {
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -699,9 +714,10 @@ width: 358px;
 padding: 0;
 padding-left: 15px;
 }
+/* Submit */
 .submit {
 background: var(--blue);
-border-color: var(--blue);
+border: none;
 border-radius: 4px;
 width: 200px;
 height: 50px;
@@ -712,6 +728,14 @@ line-height: 1.88;
 letter-spacing: 0.06em;
 color: var(--white);
 cursor: pointer;
+transition-property: background;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Submit hover */
+.submit:hover,
+.submit:focus {
+background:var(--hat-button-hover);
 }
 .submit-svg {
 margin-left: 10px;
