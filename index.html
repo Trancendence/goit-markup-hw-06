@@ -72,36 +72,48 @@
       <form class="modal-form" autocomplete="on">
         <label class="modal-label">Ім'я</label>
         <div class="modal-div">
-        <input type="name" class="modal-form-name" placeholder=" ">
+        <input type="name" class="modal-form-name">
         <span class="modal-icon">
-          <svg width="12" height="12">
+          <svg width="12" height="12" class="modal-svg">
           <use href=".//images/icons.svg#name"></use>
         </svg>
       </span>
       </div>
-      <label class="modal-label">Телефон</label>
+      <label class="modal-label" for="phone">Телефон</label>
         <div class="modal-div">
-          <input type="phone" class="modal-form-name" placeholder=" ">
+          <input name="phone" type="phone" dir="phone" class="modal-form-name">
           <span class="modal-icon">
-            <svg width="13" height="13">
+            <svg width="13" height="13" class="modal-svg">
             <use href=".//images/icons.svg#phone"></use>
           </svg>
         </span>
         </div>
-        <label class="modal-label">Пошта</label>
+        <label class="modal-label" for="mail">Пошта</label>
           <div class="modal-div">
-            <input type="mail" class="modal-form-name" placeholder=" ">
+            <input name="mail" type="mail" id="mail" class="modal-form-name">
             <span class="modal-icon">
-              <svg width="15" height="12">
+              <svg width="15" height="12" class="modal-svg">
                 <use href=".//images/icons.svg#mail"></use>
               </svg>
             </span>
           </div>
-          <label class="modal-label">Коментар</label>
+          <label class="modal-label" for="comment">Коментар</label>
             <div class="modal-div">
-              <input type="comment" class="modal-form-comment" placeholder="Введіть текст">
+              <textarea name="comment" type="comment" id="comment" class="modal-form-comment" rows="5" placeholder="Введіть текст"></textarea>
             </div>
       </form>
+      <div class="agree">
+        <!-- Agree box -->
+      <input type="checkbox" class="agree-input" name="checkbox" id="checkbox">
+      <label for="checkbox">
+        <svg width="11px" height="8px" class="agree-svg">
+        <use href=".//images/icons.svg#check"></use>
+      </svg>
+    </input>
+        <span class="agree-span">Погоджуюся з розсилкою та приймаю <a href="" class="agree-a"> Умови договору</a></span>
+        </label>
+      </div>
+      <button type="submit" name="modal-submit" class="modal-submit">Відправити</button>
       </div>
     </div>
   </div>
@@ -436,8 +448,8 @@
 </div>
 <!--Subscribe-->
 <div class="subscribe">
-  <h2 class="connect-h2">Підпишіться на розсилку</h2>
   <form name="subscribe">
+    <label for="email"><h2 class="connect-h2">Підпишіться на розсилку</h2></label>
     <input type="email" name="email" class="email" placeholder="E-mail" />
     <button type="submit" class="submit">Підписатися
       <svg width="24px" height="24px" class="submit-svg">

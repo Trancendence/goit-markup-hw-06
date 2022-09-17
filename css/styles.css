@@ -234,7 +234,9 @@ visibility: visible;
 transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* modal */
+
+/* Modal */
+
 .modal {
 background: var(--white);
 border-radius: 4px;
@@ -245,6 +247,7 @@ left: 50%;
 top: 50%;
 transform: translate(-50%, -50%); 
 }
+/* modal-h2 */
 .modal-h2 {
 font-weight: 700;
 font-size: 20px;
@@ -254,41 +257,55 @@ margin: 0;
 margin-top: 40px;
 margin-bottom: 12px;
 } 
+/* form-div */
 .form-div {
 margin-left: 40px;
 margin-right: 40px;
 }
+/* modal-div */
 .modal-div {
 display: flex;
 flex-direction: column;
 margin-bottom: 10px;
 position: relative;
 }
+/* modal-label */
 .modal-label {
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--grey75);
 }
+/* Input-name */
 .modal-form-name {
 height: 40px;
 border: 1px solid var(--input-border);
 border-radius: 4px;
 padding: 0;
+padding-left: 42px;
 }
+/* Input-comment */
 .modal-form-comment {
-height: 120px;
 border: 1px solid var(--input-border);
 border-radius: 4px;
-padding: 0;
+padding: 12px 16px; 
+resize: none;
 }
+/* Input focus */
+.modal-form-name:focus,
+.modal-form-comment:focus {
+border: 1px solid var(--blue);
+outline: none;
+fill: var(--blue);
+}
+/* modal-form-comment::placeholder */
 .modal-form-comment::placeholder {
-text-align: left;
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: var(--input-comment);
 }
+/* Modal-icon */
 .modal-icon {
 position: absolute;
 top: 50%;
@@ -297,7 +314,15 @@ transform: translateY(-50%);
 display: inline-block;
 width: 20px;
 height: 20px;
-background-color: tomato;
+}
+/* Modal-svg */
+.modal-svg {
+margin-left: 20%;
+margin-top: 50%;
+transform: translateY(-50%);
+}
+.modal-form-name:focus-within + .modal-icon {
+fill: var(--blue);
 }
 /* hat-button-close */
 .hat-button-close {
@@ -312,9 +337,71 @@ display: block;
 border: 1px solid var(--hat-button-close-border);
 border-radius: 100%;
 background-color: var(--white);
-
-
 }
+.hat-button-close:hover {
+fill: var(--blue);
+}
+/* Agree */
+.agree {
+line-height: 1.71;
+color: var(--grey75);
+margin: 0;
+margin-top: 20px;
+position: relative;
+}
+/* Agree box */
+.agree-input {
+width: 16px;
+height: 15px;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+/* Agree check */
+.agree-svg {
+fill: var(--blue);
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+/* Agree check */
+.agree-svg:hover  {
+fill: #2196F3;
+}
+/* Agree a */
+.agree-a {
+text-decoration: underline;
+color: var(--blue);
+}
+.agree-span {
+margin-left: 37px;
+}
+/* Modal Button */
+.modal-submit {
+width: 200px;
+height: 50px;
+margin: 0;
+padding: 0;
+margin-top: 30px;
+transform: translateX(50%);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+color: var(--white);
+background: var(--blue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+/* Modal Button hover */
+.modal-submit:hover,
+.modal-submit:focus {
+background: var(--hat-button-hover);
+}
+/* Modal end */
+
 /* Шапка (hat) end */
 
 
@@ -624,6 +711,7 @@ padding: 0;
 line-height: 1.88;
 letter-spacing: 0.06em;
 color: var(--white);
+cursor: pointer;
 }
 .submit-svg {
 margin-left: 10px;
