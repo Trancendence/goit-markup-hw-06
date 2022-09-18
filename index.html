@@ -67,15 +67,14 @@
           <use href="./images/icons.svg#cross"></use>
         </svg>
       </button>
-      <h2 class="modal-h2">Залиште свої дані, ми вам передзвонимо</h2>
+      <p class="modal-p">Залиште свої дані, ми вам передзвонимо</p>
       <!-- form-div -->
-      <div class="form-div">
+      <div>
       <form class="modal-form" autocomplete="on">
         <!-- Name -->
         <label class="modal-label">Ім'я</label>
         <div class="modal-div">
         <input type="name" class="modal-input">
-        <span class="modal-icon">
           <svg width="12" height="12" class="modal-svg">
           <use href=".//images/icons.svg#name"></use>
         </svg>
@@ -85,7 +84,6 @@
       <label class="modal-label" for="phone">Телефон</label>
         <div class="modal-div">
           <input name="phone" type="phone" dir="phone" class="modal-input">
-          <span class="modal-icon">
             <svg width="13" height="13" class="modal-svg">
             <use href=".//images/icons.svg#phone"></use>
           </svg>
@@ -94,8 +92,7 @@
         <!-- Mail -->
         <label class="modal-label" for="mail">Пошта</label>
           <div class="modal-div">
-            <input name="mail" type="mail" id="mail" class="modal-input">
-            <span class="modal-icon">
+            <input name="mail" type="mail" id="mail" class="modal-input"> 
               <svg width="15" height="12" class="modal-svg">
                 <use href=".//images/icons.svg#mail"></use>
               </svg>
@@ -109,13 +106,14 @@
       </form>
       <!-- Agree -->
       <div class="agree">
+        <label for="checkbox"></label>
       <input type="checkbox" class="agree-input visually-hidden" name="checkbox" id="checkbox">
-      <label for="checkbox">
-        <svg width="11px" height="8px" class="agree-svg">
-        <use href=".//images/icons.svg#check"></use>
+        <svg width="16px" height="15px" class="agree-svg">
+        <use href=".//images/icons.svg#check" class="checked"></use>
+        <use href=".//images/icons.svg#box" class="unchecked"></use>
       </svg>
     </input>
-        <span class="agree-span">Погоджуюся з розсилкою та приймаю <a href="" class="agree-a"> Умови договору</a></span>
+        <span class="agree-span">Погоджуюся з розсилкою та приймаю <a href="" class="agree-a" target="_blank" > Умови договору</a></span>
         </label>
       </div>
       <button type="submit" name="modal-submit" class="modal-submit">Відправити</button>
@@ -399,7 +397,7 @@
   <!--Bottom-->
   <!--Footer-->
   <footer>
-    <section class="container">
+    <div class="container">
     <div>
 <!--Logo-->
 <a href="./index.html" class="logo"><span class="web">Web</span><span class="stud1">Studio</span></a>
@@ -455,7 +453,7 @@
 <!--Subscribe-->
 <div class="subscribe">
   <form name="subscribe">
-    <label for="email"><h2 class="connect-h2">Підпишіться на розсилку</h2></label>
+    <label for="email"><p class="connect-p">Підпишіться на розсилку</p></label>
     <input type="email" name="email" class="subscribe-email" placeholder="E-mail" />
     <button type="submit" class="subscribe-button">Підписатися
       <svg width="24px" height="24px" class="subscribe-svg">
@@ -464,8 +462,8 @@
     </button>
   </form>
 </div>
+<!--Subscribe end-->
 </div>
-</section>
 </footer>
 <script src="./js/modal.js"></script>
 </body>
