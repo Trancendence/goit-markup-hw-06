@@ -26,6 +26,7 @@
 --input-email:rgba(255, 255, 255, 0.6);
 --input-border:rgba(33, 33, 33, 0.2);
 --input-comment:rgba(117, 117, 117, 0.5);
+--subscribe-border:rgba(255, 255, 255, 0.3);
 }
 /* Root end */
 
@@ -277,7 +278,7 @@ letter-spacing: 0.01em;
 color: var(--grey75);
 }
 /* Input-name */
-.modal-form-name {
+.modal-input {
 height: 40px;
 border: 1px solid var(--input-border);
 border-radius: 4px;
@@ -288,7 +289,7 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Input-comment */
-.modal-form-comment {
+.modal-comment {
 border: 1px solid var(--input-border);
 border-radius: 4px;
 padding: 12px 16px; 
@@ -298,13 +299,13 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Input focus */
-.modal-form-name:focus,
-.modal-form-comment:focus {
+.modal-input:focus,
+.modal-comment:focus {
 border: 1px solid var(--blue);
 outline: none;
 }
 /* modal-form-comment::placeholder */
-.modal-form-comment::placeholder {
+.modal-comment::placeholder {
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
@@ -326,7 +327,7 @@ margin-left: 20%;
 margin-top: 50%;
 transform: translateY(-50%);
 }
-.modal-form-name:focus-within + .modal-icon {
+.modal-input:focus-within + .modal-icon {
 fill: var(--blue);
 }
 /* hat-button-close */
@@ -698,11 +699,11 @@ color:var(--blue);
 margin: 0;
 margin-left: 93px;
 display: flex;
-flex-direction: column;
+position: relative;
 }
 /* Email */
-.email {
-border: 1px solid rgba(255, 255, 255, 0.3);
+.subscribe-email {
+border: 1px solid var(--subscribe-border);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 background-color: transparent;
@@ -713,9 +714,10 @@ height: 50px;
 width: 358px;
 padding: 0;
 padding-left: 15px;
+margin-right: 12px;
 }
-/* Submit */
-.submit {
+/* Submit button */
+.subscribe-button {
 background: var(--blue);
 border: none;
 border-radius: 4px;
@@ -731,13 +733,15 @@ cursor: pointer;
 transition-property: background;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+position: absolute;
 }
-/* Submit hover */
-.submit:hover,
-.submit:focus {
+/* Submit button hover */
+.subscribe-button:hover,
+.subscribe-button:focus {
 background:var(--hat-button-hover);
 }
-.submit-svg {
+/* svg */
+.subscribe-svg {
 margin-left: 10px;
 }
 
