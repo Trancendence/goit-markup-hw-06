@@ -350,61 +350,43 @@ margin: 0;
 margin-top: 20px;
 position: relative;
 }
+.agree-label {
+display: block;
+}
 /* Agree box */
 .agree-input {
 width: 16px;
 height: 15px;
 position: absolute;
-top: 50%;
-transform: translateY(-50%);
-margin-left: 12px;
+margin-left: 19px;
 }
 /* Agree check */
+.agree-span {
+margin-left: 14px;
+margin-right: 7px;
+width: 16px;
+height: 15px;
+}
+/* Agree svg */
 .agree-svg {
-position: absolute;
-top: 50%;
-margin-left: 12px;
-transform: translateY(-50%);
-transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+border: 2px solid var(--black);
+border-radius: 4px;
+fill: var(--white);
 }
-.checked {
-opacity: 0;
-fill: var(--blue);
-transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+/* Agree svg hover + focus */
+.agree-svg:hover,
+.agree-svg:focus {
+border-color: var(--blue);
+background-color: var(--blue);
 }
-.unchecked {
-opacity: 1;
-fill: var(--black);
-transition-property: fill;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.agree-input:checked + .agree-svg .checked {
-opacity: 1;
-}
-.agree-input:checked + .agree-svg .unchecked {
-opacity: 0;
-}
-.agree-svg:focus .unchecked,
-.agree-svg:hover .unchecked {
-fill: var(--blue);
-}
-.agree-svg:focus .checked,
-.agree-svg:hover .checked {
-fill: var(--blue);
-}
+
 /* Agree a */
 .agree-a {
 text-decoration: underline;
 color: var(--blue);
+margin-left: 8px;
 }
-.agree-span {
-margin-left: 37px;
-}
+
 /* Modal Button */
 .modal-submit {
 width: 200px;
