@@ -374,8 +374,7 @@ border-radius: 4px;
 fill: var(--white);
 }
 /* Agree svg hover + focus */
-.agree-svg:hover,
-.agree-svg:focus {
+.agree-input:checked ~ .agree-svg {
 border-color: var(--blue);
 background-color: var(--blue);
 }
