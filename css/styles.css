@@ -706,6 +706,7 @@ text-transform: uppercase;
 color:var(--white);
 margin:0;
 margin-bottom: 20px;
+display: flex;
 }
 /* Email */
 .subscribe-email {

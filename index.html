@@ -74,40 +74,37 @@
         <!-- Name -->
         <label class="modal-label">Ім'я</label>
         <div class="modal-div">
-        <input type="name" class="modal-input">
+        <input name="name" type="text" class="modal-input">
           <svg width="12" height="12" class="modal-svg">
           <use href=".//images/icons.svg#name"></use>
         </svg>
-      </span>
       </div>
       <!-- Phone -->
       <label class="modal-label" for="phone">Телефон</label>
         <div class="modal-div">
-          <input name="phone" type="phone" dir="phone" class="modal-input">
+          <input name="phone" type="text" id="phone" class="modal-input">
             <svg width="13" height="13" class="modal-svg">
             <use href=".//images/icons.svg#phone"></use>
           </svg>
-        </span>
         </div>
         <!-- Mail -->
         <label class="modal-label" for="mail">Пошта</label>
           <div class="modal-div">
-            <input name="mail" type="mail" id="mail" class="modal-input"> 
+            <input name="mail" type="text" id="mail" class="modal-input"> 
               <svg width="15" height="12" class="modal-svg">
                 <use href=".//images/icons.svg#mail"></use>
               </svg>
-            </span>
           </div>
           <!-- Comment -->
           <label class="modal-label" for="comment">Коментар</label>
             <div class="modal-div">
-              <textarea name="comment" type="comment" id="comment" class="modal-comment" rows="5" placeholder="Введіть текст"></textarea>
+              <textarea name="comment" id="comment" class="modal-comment" rows="5" placeholder="Введіть текст"></textarea>
             </div>
       </form>
       <!-- Agree -->
       <div class="agree">
         <label class="agree-label">
-      <input type="checkbox" class="agree-input visually-hidden" name="checkbox"></input>
+      <input type="checkbox" class="agree-input visually-hidden" name="checkbox">
         <span class="agree-span"></span>
         <svg width="16px" height="15px" class="agree-svg">
           <use href="./images/icons.svg#check" class="agree-use"></use>
@@ -453,8 +450,8 @@
 <!--Subscribe-->
 <div class="subscribe">
   <form name="subscribe">
-    <label for="email"><p class="connect-p">Підпишіться на розсилку</p></label>
-    <input type="email" name="email" class="subscribe-email" placeholder="E-mail" />
+    <label for="email" class="connect-p">Підпишіться на розсилку</label>
+    <input type="email" name="email" id="email" class="subscribe-email" placeholder="E-mail" />
     <button type="submit" class="subscribe-button">Підписатися
       <svg width="24px" height="24px" class="subscribe-svg">
         <use href="./images/icons.svg#send"></use>
